@@ -139,7 +139,7 @@ export const FindaQuiz: React.FC = () => {
             <HelpCircle className="w-4 h-4 text-amber-600" />
             <span>Kuis Sahabat Terbaik</span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold font-heading text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900">
             Seberapa Kenal Kamu Dengan Finda? 🎯
           </h2>
           <p className="text-gray-600 text-sm max-w-md mx-auto">
@@ -165,7 +165,7 @@ export const FindaQuiz: React.FC = () => {
             </div>
 
             {/* Question Text */}
-            <h3 className="text-xl md:text-2xl font-bold font-heading text-gray-800 leading-relaxed">
+            <h3 className="text-xl md:text-2xl font-bold text-gray-800 leading-relaxed">
               {currentQ.question}
             </h3>
 
@@ -240,7 +240,7 @@ export const FindaQuiz: React.FC = () => {
             </div>
 
             <div className="space-y-2">
-              <h3 className="text-2xl md:text-3xl font-bold font-heading text-gray-900">
+              <h3 className="text-2xl md:text-3xl font-extrabold tracking-tight text-gray-900">
                 Sertifikat Sahabat Sejati Finda Meliana Putri! 🏆
               </h3>
               <p className="text-gray-600 text-sm">

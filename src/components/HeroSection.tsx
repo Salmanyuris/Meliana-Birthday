@@ -64,7 +64,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
           </div>
 
           {/* Main Title */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold font-heading leading-tight text-gray-900">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight text-gray-900">
             Selamat Ulang Tahun, <br />
             <span className="shimmer-text">Finda Meliana Putri! 🌸✨</span>
           </h1>

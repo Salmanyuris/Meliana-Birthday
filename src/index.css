@@ -12,14 +12,16 @@
   --color-pastel-purple: #E1BEE7;
   --color-pastel-gold: #FFD700;
 
-  --font-serif: 'Cormorant Garamond', 'Playfair Display', serif;
-  --font-sans: 'Nunito', 'Poppins', sans-serif;
+  /* ── Typography System ── */
+  /* Primary: Plus Jakarta Sans — modern, clean, versatile */
+  /* Accent: Dancing Script — romantic, poetic moments only */
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-serif: 'Plus Jakarta Sans', sans-serif;
   --font-handwriting: 'Dancing Script', cursive;
-
-  --font-heading: 'Cormorant Garamond', 'Playfair Display', serif;
+  --font-heading: 'Plus Jakarta Sans', sans-serif;
   --font-script: 'Dancing Script', cursive;
-  --font-display: 'Cormorant Garamond', serif;
-  --font-body: 'Nunito', 'Poppins', sans-serif;
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
 
   --animate-float: float 4s ease-in-out infinite;
   --animate-float-slow: floatSlow 6s ease-in-out infinite;
@@ -46,92 +48,113 @@
   --background: #FFF5FA;
 }
 
+/* ═══════════════════════════════════════
+   GLOBAL BASE — Plus Jakarta Sans everywhere
+   ═══════════════════════════════════════ */
+*, *::before, *::after {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
 body {
   background-color: var(--background);
   color: #2D3748;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
-h1, h2, h3, .font-heading {
-  font-family: 'Playfair Display', serif;
+/* ── Heading Scale — Plus Jakarta Sans, Extra Bold ── */
+h1, h2, h3, h4, h5, h6,
+.font-heading {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
 }
 
-.font-script {
+h1 { font-size: clamp(2rem, 5vw, 3.75rem); }
+h2 { font-size: clamp(1.6rem, 4vw, 3rem); }
+h3 { font-size: clamp(1.2rem, 3vw, 1.75rem); }
+
+/* ── Accent Font — Dancing Script for poetic/romantic text only ── */
+.font-script,
+.font-handwriting {
   font-family: 'Dancing Script', cursive;
+  font-weight: 600;
+  letter-spacing: 0.01em;
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background: #FFF0F5;
-}
-::-webkit-scrollbar-thumb {
-  background: #FFB6C1;
-  border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #FF69B4;
-}
+/* ── Utility weight helpers ── */
+.font-display { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; }
+.font-ui      { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600; }
+.font-body    { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 400; }
 
-/* Hide horizontal scrollbars */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
+/* ═══════════════════════════════════════
+   CUSTOM SCROLLBAR
+   ═══════════════════════════════════════ */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #FFF0F5; }
+::-webkit-scrollbar-thumb { background: #FFB6C1; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #FF69B4; }
 
-/* Custom Animations */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ═══════════════════════════════════════
+   KEYFRAME ANIMATIONS
+   ═══════════════════════════════════════ */
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-15px); }
+  50%       { transform: translateY(-15px); }
 }
 
 @keyframes floatSlow {
   0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-12px) rotate(2deg); }
+  50%       { transform: translateY(-12px) rotate(2deg); }
 }
 
 @keyframes floatHeart {
-  0% { transform: translateY(105vh) rotate(0deg) scale(0.6); opacity: 0; }
-  15% { opacity: 0.7; }
-  85% { opacity: 0.7; }
+  0%   { transform: translateY(105vh) rotate(0deg) scale(0.6); opacity: 0; }
+  15%  { opacity: 0.7; }
+  85%  { opacity: 0.7; }
   100% { transform: translateY(-15vh) rotate(360deg) scale(1.1); opacity: 0; }
 }
 
 @keyframes flameFlicker {
-  0% { transform: scale(1) rotate(-1deg); filter: drop-shadow(0 0 15px #FFA000); }
-  25% { transform: scale(1.08, 0.95) rotate(1deg); filter: drop-shadow(0 0 25px #FF6D00); }
-  50% { transform: scale(0.95, 1.05) rotate(-2deg); filter: drop-shadow(0 0 20px #FFAB00); }
-  75% { transform: scale(1.05, 0.98) rotate(1.5deg); filter: drop-shadow(0 0 30px #FF6D00); }
-  100% { transform: scale(1) rotate(0deg); filter: drop-shadow(0 0 18px #FFA000); }
+  0%   { transform: scale(1) rotate(-1deg);      filter: drop-shadow(0 0 15px #FFA000); }
+  25%  { transform: scale(1.08, 0.95) rotate(1deg);  filter: drop-shadow(0 0 25px #FF6D00); }
+  50%  { transform: scale(0.95, 1.05) rotate(-2deg); filter: drop-shadow(0 0 20px #FFAB00); }
+  75%  { transform: scale(1.05, 0.98) rotate(1.5deg);filter: drop-shadow(0 0 30px #FF6D00); }
+  100% { transform: scale(1) rotate(0deg);       filter: drop-shadow(0 0 18px #FFA000); }
 }
 
 @keyframes pulseGlow {
   0%, 100% { filter: drop-shadow(0 0 15px rgba(255, 105, 180, 0.6)); }
-  50% { filter: drop-shadow(0 0 30px rgba(255, 105, 180, 0.9)); }
+  50%       { filter: drop-shadow(0 0 30px rgba(255, 105, 180, 0.9)); }
 }
 
 @keyframes flicker {
   0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.8; transform: scale(0.92) translateY(-2px); }
+  50%       { opacity: 0.8; transform: scale(0.92) translateY(-2px); }
 }
 
 @keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
 }
 
 @keyframes sway {
   0%, 100% { transform: rotate(-3deg); }
-  50% { transform: rotate(3deg); }
+  50%       { transform: rotate(3deg); }
 }
 
+/* ═══════════════════════════════════════
+   SPECIAL EFFECTS
+   ═══════════════════════════════════════ */
 .shimmer-text {
   background: linear-gradient(90deg, #FF69B4 0%, #FFD700 50%, #FF69B4 100%);
   background-size: 200% auto;
@@ -141,7 +164,7 @@ h1, h2, h3, .font-heading {
   animation: shimmer 4s linear infinite;
 }
 
-/* Glassmorphism Styles */
+/* ── Glassmorphism Variants ── */
 .glass-card {
   background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(18px);
@@ -166,9 +189,11 @@ h1, h2, h3, .font-heading {
   box-shadow: 0 15px 40px rgba(255, 105, 180, 0.22);
 }
 
-/* Sparkle Background effect */
+/* ── Sparkle Dot Pattern Background ── */
 .sparkle-bg {
-  background-image: radial-gradient(rgba(255, 182, 193, 0.4) 1px, transparent 1px), radial-gradient(rgba(255, 215, 0, 0.3) 1px, #FFF5FA 1px);
+  background-image:
+    radial-gradient(rgba(255, 182, 193, 0.4) 1px, transparent 1px),
+    radial-gradient(rgba(255, 215, 0, 0.3)  1px, #FFF5FA 1px);
   background-size: 40px 40px;
   background-position: 0 0, 20px 20px;
 }

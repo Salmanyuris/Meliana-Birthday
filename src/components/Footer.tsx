@@ -17,7 +17,7 @@ export const Footer: React.FC = () => {
           <div className="w-9 h-9 rounded-full bg-pink-500 text-white flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
             <Heart className="w-5 h-5 fill-white animate-pulse" />
           </div>
-          <span className="font-heading font-bold text-xl text-gray-900">
+          <span className="font-extrabold text-xl text-gray-900">
             Finda Meliana Putri 🌸
           </span>
         </div>

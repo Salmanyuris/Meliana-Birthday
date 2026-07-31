@@ -41,7 +41,7 @@ export const SecretLetter: React.FC = () => {
             <Mail className="w-4 h-4 text-rose-500" />
             <span>Pesan Tulus Sahabat Terbaik</span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold font-heading text-gray-900">
+          <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-gray-900">
             Surat Ulang Tahun Ke-23 Spesial 💌
           </h2>
           <p className="text-gray-600 text-sm max-w-md mx-auto">
@@ -86,7 +86,7 @@ export const SecretLetter: React.FC = () => {
             >
               <div className="flex items-center justify-between border-b border-pink-200/60 pb-4">
                 <div>
-                  <h3 className="font-heading font-bold text-2xl text-pink-800">
+                  <h3 className="font-extrabold text-2xl text-pink-800">
                     Selamat Ulang Tahun Ke-23, Finda! 🌸
                   </h3>
                   <p className="text-xs text-gray-500 font-bold">23 Tahun Penuh Keindahan • Special Edition</p>

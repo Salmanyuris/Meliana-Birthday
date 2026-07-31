@@ -105,7 +105,7 @@ export const MemoriesGallery: React.FC = () => {
             <Sparkles className="w-4 h-4 text-pink-500" />
             <span>Alasan Mengapa Kamu Begitu Istimewa</span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold font-heading text-gray-900">
+          <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-gray-900">
             Galeri Kenangan & Apresiasi 💖
           </h2>
           <p className="text-gray-600 max-w-md mx-auto text-sm md:text-base">
@@ -154,7 +154,7 @@ export const MemoriesGallery: React.FC = () => {
                   </span>
                 </div>
 
-                <h3 className="font-heading font-bold text-lg text-gray-800">
+                <h3 className="font-bold text-base text-gray-800 leading-snug">
                   {card.title}
                 </h3>
 
@@ -162,7 +162,7 @@ export const MemoriesGallery: React.FC = () => {
                   {card.description}
                 </p>
 
-                <div className="p-3 bg-pink-50/70 rounded-xl border border-pink-100 text-xs italic text-pink-800">
+                <div className="p-3 bg-pink-50/70 rounded-xl border border-pink-100 text-xs font-script text-lg text-pink-800 italic">
                   "{card.quote}"
                 </div>
               </div>
