@@ -64,13 +64,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
           </div>
 
           {/* Main Title */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight text-gray-900">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-heading leading-tight text-gray-900">
             Selamat Ulang Tahun, <br />
-            <span className="shimmer-text">Finda Meliana Putri! 🌸✨</span>
+            <span className="shimmer-text">Finda Meliana Putri!</span>
           </h1>
 
           {/* Subtitle with Chapter 23 Concept */}
-          <p className="text-base md:text-lg text-gray-600 font-light max-w-xl mx-auto lg:mx-0 leading-relaxed">
+          <p className="text-base md:text-lg text-gray-600 font-normal max-w-xl mx-auto lg:mx-0 leading-relaxed" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 400 }}>
             Selamat datang di <strong className="text-pink-600 font-semibold">Chapter {currentAge}</strong>! 23 tahun perjalanan indah yang dipenuhi keceriaan, tawa manis, dan kebaikan hati. Semoga babak baru di usia ke-{currentAge} ini diliputi keberkahan dan kebahagiaan tanpa batas! 💕
           </p>
 
@@ -145,7 +145,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
               {/* Handwritten Overlay Label */}
               <div className="pt-4 text-center">
                 <p className="font-script text-2xl text-pink-600 font-bold">Finda Meliana Putri 🌸</p>
-                <p className="text-xs text-gray-500 font-medium">Chapter {currentAge} • Special Edition</p>
+                <p className="text-xs text-gray-500 font-medium mt-1" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>Chapter {currentAge} • Special Edition</p>
               </div>
 
             </div>

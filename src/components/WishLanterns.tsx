@@ -176,8 +176,7 @@ export const WishLanterns: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-3xl sm:text-4xl md:text-5xl font-bold text-white text-center leading-tight px-2"
-            style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, letterSpacing: '-0.02em' }}
+            className="text-3xl sm:text-4xl md:text-5xl font-bold font-heading text-white text-center leading-tight px-2"
           >
             Lampion{' '}
             <span style={{

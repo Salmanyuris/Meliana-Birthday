@@ -105,7 +105,7 @@ export const MemoriesGallery: React.FC = () => {
             <Sparkles className="w-4 h-4 text-pink-500" />
             <span>Alasan Mengapa Kamu Begitu Istimewa</span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-gray-900">
+          <h2 className="text-3xl md:text-5xl font-bold font-heading text-gray-900">
             Galeri Kenangan & Apresiasi 💖
           </h2>
           <p className="text-gray-600 max-w-md mx-auto text-sm md:text-base">

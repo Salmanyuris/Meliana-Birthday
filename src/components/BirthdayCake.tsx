@@ -58,7 +58,7 @@ export const BirthdayCake: React.FC = () => {
             <Flame className="w-4 h-4 text-amber-500 fill-amber-400 animate-pulse" />
             <span>Momen Virtual Make a Wish</span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-gray-900">
+          <h2 className="text-3xl md:text-5xl font-bold font-heading text-gray-900">
             Kue Ulang Tahun & Momen Tiup Lilin 🎂✨
           </h2>
           <p className="text-gray-600 max-w-md mx-auto text-sm md:text-base font-light">
@@ -229,7 +229,7 @@ export const BirthdayCake: React.FC = () => {
         {/* Wish Input Box */}
         <div className="max-w-md mx-auto pt-6">
           <div className="glass-card p-5 rounded-3xl border border-pink-100 shadow-md">
-            <h3 className="text-lg font-extrabold text-gray-800 mb-2 flex items-center justify-center gap-2">
+            <h3 className="text-base font-bold text-gray-800 mb-2 flex items-center justify-center gap-2" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
               <Heart className="w-4 h-4 text-pink-500 fill-pink-500" />
               <span>Tulis Wish & Doamu Di Usia Ke-23</span>
             </h3>
