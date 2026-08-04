@@ -32,7 +32,7 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="pt-4 text-[10px] text-gray-400">
-          © {new Date().getFullYear()} Finda Meliana Putri Birthday Edition • Best Friend Forever
+          © {new Date().getFullYear()} Finda Meliana Putri Birthday Edition • Made with 💖 by Salman Yuris
         </div>
 
       </div>
