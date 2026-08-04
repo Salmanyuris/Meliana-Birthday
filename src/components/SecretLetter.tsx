@@ -110,7 +110,7 @@ export const SecretLetter: React.FC = () => {
                 </p>
                 <p className="text-right pt-4">
                   Dengan penuh rasa syukur & cinta, <br />
-                  <span className="text-pink-600 font-bold">Sahabat Terbaikmu 💖✨</span>
+                  <span className="text-pink-600 font-bold">Salman Yuris 💖✨</span>
                 </p>
               </div>
 
