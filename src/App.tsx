@@ -11,6 +11,9 @@ import { FindaQuiz } from './components/FindaQuiz';
 import { WishLanterns } from './components/WishLanterns';
 import { SecretLetter } from './components/SecretLetter';
 import { Footer } from './components/Footer';
+import { BalloonPop } from './components/BalloonPop';
+import { FunToast } from './components/FunToast';
+import { WelcomeConfetti } from './components/WelcomeConfetti';
 
 export function App() {
   const [activeSection, setActiveSection] = useState('hero');
@@ -49,11 +52,20 @@ export function App() {
   return (
     <div className="relative min-h-screen bg-[#FFF5FA] text-gray-800 font-sans selection:bg-pink-300 selection:text-pink-900 overflow-x-hidden pb-28">
       
+      {/* ✨ Welcome Confetti Burst on Load */}
+      <WelcomeConfetti />
+
       {/* 3D Three.js Floating Particle Background */}
       <ParticleCanvas />
 
       {/* Floating Animated Hearts & Sparkles */}
       <FloatingHearts />
+
+      {/* 🎈 Floating Balloons — click to pop! */}
+      <BalloonPop />
+
+      {/* 🔔 Fun Toast Notifications */}
+      <FunToast />
 
       {/* Main Content Sections */}
       <main className="relative z-10 space-y-4">

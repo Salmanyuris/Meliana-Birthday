@@ -66,7 +66,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
           {/* Main Title */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-heading leading-tight text-gray-900">
             Selamat Ulang Tahun, <br />
-            <span className="shimmer-text">Finda Meliana Putri!</span>
+            <span className="rainbow-text">Finda Meliana Putri!</span>
           </h1>
 
           {/* Subtitle with Chapter 23 Concept */}
@@ -82,9 +82,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
                 sound.playPop();
                 onNavigate('photos');
               }}
-              className="px-6 py-3.5 rounded-full bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold text-sm shadow-glow hover:shadow-glow-lg hover:scale-105 transition-all flex items-center gap-2 active:scale-95"
+              className="hover-rubber px-6 py-3.5 rounded-full bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold text-sm shadow-glow hover:shadow-glow-lg hover:scale-105 transition-all flex items-center gap-2 active:scale-95"
             >
-              <Sparkles className="w-4 h-4 text-yellow-300" />
+              <Sparkles className="w-4 h-4 text-yellow-300 animate-star-spin" />
               <span>Lihat Foto & Momen Finda 📸</span>
             </button>
 
@@ -94,7 +94,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
                 triggerConfettiBurst();
                 onNavigate('cake');
               }}
-              className="px-6 py-3.5 rounded-full bg-white/90 text-pink-700 font-semibold text-sm border border-pink-200 shadow-sm hover:bg-pink-50 hover:scale-105 transition-all flex items-center gap-2 active:scale-95"
+              className="hover-jello px-6 py-3.5 rounded-full bg-white/90 text-pink-700 font-semibold text-sm border border-pink-200 shadow-sm hover:bg-pink-50 hover:scale-105 transition-all flex items-center gap-2 active:scale-95"
             >
               <Flame className="w-4 h-4 text-amber-500 fill-amber-400" />
               <span>Tiup Lilin Kue 🎂</span>
@@ -104,12 +104,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
 
           {/* Floating Badges */}
           <div className="pt-4 flex items-center justify-center lg:justify-start gap-4 text-xs text-gray-500 font-medium">
-            <div className="flex items-center gap-1.5 bg-white/80 backdrop-blur-md px-3.5 py-2 rounded-full border border-pink-100 shadow-xs">
-              <Heart className="w-4 h-4 text-rose-500 fill-rose-500 animate-pulse" />
+            <div className="flex items-center gap-1.5 bg-white/80 backdrop-blur-md px-3.5 py-2 rounded-full border border-pink-100 shadow-xs hover-heartbeat">
+              <Heart className="w-4 h-4 text-rose-500 fill-rose-500 animate-heartbeat" />
               <span>Dibuat Khusus Untuk Finda</span>
             </div>
-            <div className="flex items-center gap-1.5 bg-white/80 backdrop-blur-md px-3.5 py-2 rounded-full border border-pink-100 shadow-xs">
-              <Sparkles className="w-4 h-4 text-amber-500" />
+            <div className="flex items-center gap-1.5 bg-white/80 backdrop-blur-md px-3.5 py-2 rounded-full border border-pink-100 shadow-xs hover-wobble">
+              <Sparkles className="w-4 h-4 text-amber-500 animate-star-spin" />
               <span>Best Friend Forever 🌟</span>
             </div>
           </div>
