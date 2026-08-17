@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Volume2, VolumeX, Music, Heart, Sparkles, Home, Camera, Cake, Gift, Smile, HelpCircle, Mail, Flame } from 'lucide-react';
 import { sound } from '../utils/sound';
 import confetti from 'canvas-confetti';
