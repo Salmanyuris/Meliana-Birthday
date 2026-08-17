@@ -23,12 +23,12 @@ export const Footer: React.FC = () => {
         </div>
 
         <p className="text-xs text-gray-500 max-w-md font-light">
-          11 September 2003 • Website Hadiah Spesial Ulang Tahun Dibuat Khusus Dari Sahabat Terbaik. Semoga Hari-Harimu Selalu Dipenuhi Keceriaan! 💖✨
+          11 September 2003 • Website Hadiah Spesial Ulang Tahun Dibuat Khusus Dari Teman Terbaik. Semoga Hari-Harimu Selalu Dipenuhi Keceriaan! 💖✨
         </p>
 
         <div className="flex items-center gap-1.5 text-xs text-pink-600 font-semibold bg-pink-50 px-4 py-1.5 rounded-full border border-pink-100">
           <Sparkles className="w-3.5 h-3.5" />
-          <span>Happy Birthday Finda! Keep Shining & Smiling!</span>
+          <span>Happy Birthday Meli! Keep Shining & Smiling!</span>
         </div>
 
         <div className="pt-4 text-[10px] text-gray-400">

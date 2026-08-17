@@ -31,10 +31,10 @@ export const PhotoGallery: React.FC = () => {
     {
       id: 1,
       src: finda1,
-      title: "Senyum Manis Finda 🌸",
+      title: "Senyum Manis Meli 🌸",
       category: "Senyum Manis",
       badgeTag: "Favorit ✨",
-      caption: "Potret ceria Finda yang selalu bikin suasana hangat & penuh tawa!",
+      caption: "Potret ceria Meli yang selalu bikin suasana hangat & penuh tawa!",
       locationTag: "Momen Spesial 💖",
       rotation: "-rotate-2 hover:rotate-0",
       tapeColor: "bg-pink-300/80",
@@ -58,7 +58,7 @@ export const PhotoGallery: React.FC = () => {
       title: "Sinar Matahari ☀️",
       category: "Senyum Manis",
       badgeTag: "Warm Sunshine 🌻",
-      caption: "Sinar kebaikan dan keceriaan yang selalu menyinari hari-hari sahabatnya.",
+      caption: "Sinar kebaikan dan keceriaan yang selalu menyinari hari-hari temannya.",
       locationTag: "Warm Heart 💛",
       rotation: "-rotate-1 hover:rotate-0",
       tapeColor: "bg-amber-300/80",
@@ -82,7 +82,7 @@ export const PhotoGallery: React.FC = () => {
       title: "Tawa Ceria 💐",
       category: "Momen Ceria",
       badgeTag: "Happy Vibes 🥳",
-      caption: "Momen tertawa paling lepas bersama sahabat tercinta.",
+      caption: "Momen tertawa paling lepas bersama teman tercinta.",
       locationTag: "Joyful Day 🥳",
       rotation: "-rotate-3 hover:rotate-0",
       tapeColor: "bg-pink-300/80",
@@ -94,7 +94,7 @@ export const PhotoGallery: React.FC = () => {
       title: "Satu Dalam Sejuta ⭐",
       category: "Momen Ceria",
       badgeTag: "Bestie 🧸",
-      caption: "Finda Meliana Putri - sosok sahabat yang selalu supportif & baik hati.",
+      caption: "Finda Meliana Putri - sosok teman yang selalu supportif & baik hati.",
       locationTag: "Pure Happiness 💫",
       rotation: "rotate-1 hover:rotate-0",
       tapeColor: "bg-amber-300/80",
@@ -119,7 +119,7 @@ export const PhotoGallery: React.FC = () => {
       category: "Aesthetic Mood",
       badgeTag: "Age 23 Special 🎂",
       caption: "Semoga usiamu yang ke-23 ini menjadi awal babak hidup yang paling indah!",
-      locationTag: "Finda's Day 🎂",
+      locationTag: "Meli's Day 🎂",
       rotation: "rotate-2 hover:rotate-0",
       tapeColor: "bg-rose-300/80",
       defaultLikes: 108
@@ -173,7 +173,7 @@ export const PhotoGallery: React.FC = () => {
             Galeri Polaroid Finda Meliana Putri 📸✨
           </h2>
           <p className="text-gray-600 max-w-lg mx-auto text-sm md:text-base font-light">
-            Kumpulan foto-foto terestetik dan paling manis merayakan keindahan <span className="font-semibold text-pink-600">Ulang Tahun Ke-23 Finda</span>!
+            Kumpulan foto-foto terestetik dan paling manis merayakan keindahan <span className="font-semibold text-pink-600">Ulang Tahun Ke-23 Meli</span>!
           </p>
         </div>
 

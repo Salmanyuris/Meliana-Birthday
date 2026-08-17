@@ -109,7 +109,7 @@ export const MemoriesGallery: React.FC = () => {
             Galeri Kenangan & Apresiasi 💖
           </h2>
           <p className="text-gray-600 max-w-md mx-auto text-sm md:text-base">
-            Beberapa hal indah tentang Finda yang membuat hari ini dan setiap hari terasa jauh lebih bermakna.
+            Beberapa hal indah tentang Meli yang membuat hari ini dan setiap hari terasa jauh lebih bermakna.
           </p>
         </div>
 

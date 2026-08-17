@@ -27,15 +27,15 @@ export const UnwrapGifts: React.FC = () => {
     {
       id: 1,
       title: "Voucher Senyum Bahagia",
-      category: "Voucher Sahabat",
+      category: "Voucher Teman",
       icon: <Heart className="w-9 h-9 text-white fill-white/60" />,
       gradientFrom: "#FF6B9D",
       gradientTo: "#FF8FA3",
       glowColor: "rgba(255,107,157,0.4)",
       accentColor: "#FF6B9D",
       badge: "Berlaku Selamanya 💫",
-      message: "Voucher ini memberimu hak atas kebahagiaan tanpa batas di usiamu yang ke-23! Setiap kali merasa lelah, voucher ini menjamin cerita hangat, dukungan penuh, dan pelukan semangat terbaik untuk Finda.",
-      voucherCode: "FINDA-HAPPY-23TH",
+      message: "Voucher ini memberimu hak atas kebahagiaan tanpa batas di usiamu yang ke-23! Setiap kali merasa lelah, voucher ini menjamin cerita hangat, dukungan penuh, dan pelukan semangat terbaik untuk Meli.",
+      voucherCode: "MELI-HAPPY-23TH",
       emoji: "🌸",
     },
     {
@@ -48,7 +48,7 @@ export const UnwrapGifts: React.FC = () => {
       glowColor: "rgba(255,170,64,0.4)",
       accentColor: "#FFAA40",
       badge: "Simbol Keindahan 🌺",
-      message: "Bunga ini melambangkan betapa berharganya kehadiranmu bagi sahabat dan sekitarmu. Semoga di usia ke-23 ini hidupmu semakin mekar dan penuh keberkahan.",
+      message: "Bunga ini melambangkan betapa berharganya kehadiranmu bagi teman dan sekitarmu. Semoga di usia ke-23 ini hidupmu semakin mekar dan penuh keberkahan.",
       voucherCode: "BLOOM-AGE-23",
       emoji: "💐",
     },
@@ -63,7 +63,7 @@ export const UnwrapGifts: React.FC = () => {
       accentColor: "#A855F7",
       badge: "Tiket Bebas Pilih ✨",
       message: "Bebas klaim hari untuk jalan-jalan santai, ngopi manis, makan dessert favorit, dan nongkrong seru tanpa batasan waktu!",
-      voucherCode: "DESSERT-DAY-FINDA",
+      voucherCode: "DESSERT-DAY-MELI",
       emoji: "🍰",
     },
     {
@@ -76,7 +76,7 @@ export const UnwrapGifts: React.FC = () => {
       glowColor: "rgba(245,158,11,0.4)",
       accentColor: "#F59E0B",
       badge: "Restu Semesta 🌟",
-      message: "Semoga setiap impian dan cita-cita Finda di usia ke-23 tercapai dengan kelancaran yang indah tak terduga. Kamu layak mendapatkan semua yang terbaik di dunia ini!",
+      message: "Semoga setiap impian dan cita-cita Meli di usia ke-23 tercapai dengan kelancaran yang indah tak terduga. Kamu layak mendapatkan semua yang terbaik di dunia ini!",
       voucherCode: "BLESSINGS-AGE23",
       emoji: "🌟",
     },
@@ -189,7 +189,7 @@ export const UnwrapGifts: React.FC = () => {
             className="text-white/40 max-w-md text-sm md:text-base leading-relaxed"
             style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 400 }}
           >
-            Pilih dan klik kotak kado untuk membuka kejutan manis yang disiapkan khusus untuk Finda!
+            Pilih dan klik kotak kado untuk membuka kejutan manis yang disiapkan khusus untuk Meli!
           </motion.p>
         </div>
 

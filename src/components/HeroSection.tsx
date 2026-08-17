@@ -10,7 +10,7 @@ interface HeroSectionProps {
 }
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
-  // Dynamically calculate Finda's age (Born Sept 11, 2003)
+  // Dynamically calculate Meli's age (Born Sept 11, 2003)
   const calculateAge = () => {
     const today = new Date();
     const birthYear = 2003;
@@ -51,7 +51,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2.5">
             <div className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-gradient-to-r from-pink-500 to-rose-500 text-white text-xs font-extrabold uppercase tracking-wider shadow-md animate-bounce">
               <Award className="w-4 h-4 text-yellow-300" />
-              <span>Chapter {currentAge} • Finda's Milestone 🎂</span>
+              <span>Chapter {currentAge} • Meli's Milestone 🎂</span>
             </div>
             <div className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-amber-100/90 border border-amber-200 text-amber-800 text-xs font-bold shadow-xs">
               <Sparkle className="w-3.5 h-3.5 text-amber-500 fill-amber-400" />
@@ -59,7 +59,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
             </div>
             <div className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-pink-100/80 border border-pink-200 text-pink-700 text-xs font-bold shadow-xs">
               <Star className="w-3.5 h-3.5 text-pink-500 fill-pink-400" />
-              <span>Sahabat Terbaikku 💖</span>
+              <span>Teman Terbaikku 💖</span>
             </div>
           </div>
 
@@ -85,7 +85,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
               className="hover-rubber px-6 py-3.5 rounded-full bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold text-sm shadow-glow hover:shadow-glow-lg hover:scale-105 transition-all flex items-center gap-2 active:scale-95"
             >
               <Sparkles className="w-4 h-4 text-yellow-300 animate-star-spin" />
-              <span>Lihat Foto & Momen Finda 📸</span>
+              <span>Lihat Foto & Momen Meli 📸</span>
             </button>
 
             <button
@@ -106,7 +106,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
           <div className="pt-4 flex items-center justify-center lg:justify-start gap-4 text-xs text-gray-500 font-medium">
             <div className="flex items-center gap-1.5 bg-white/80 backdrop-blur-md px-3.5 py-2 rounded-full border border-pink-100 shadow-xs hover-heartbeat">
               <Heart className="w-4 h-4 text-rose-500 fill-rose-500 animate-heartbeat" />
-              <span>Dibuat Khusus Untuk Finda</span>
+              <span>Dibuat Khusus Untuk Meli</span>
             </div>
             <div className="flex items-center gap-1.5 bg-white/80 backdrop-blur-md px-3.5 py-2 rounded-full border border-pink-100 shadow-xs hover-wobble">
               <Sparkles className="w-4 h-4 text-amber-500 animate-star-spin" />

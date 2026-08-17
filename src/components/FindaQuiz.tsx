@@ -22,7 +22,7 @@ export const FindaQuiz: React.FC = () => {
   const questions: Question[] = [
     {
       id: 1,
-      question: "Kapan tanggal kelahiran sahabat terbaik kita, Finda Meliana Putri?",
+      question: "Kapan tanggal kelahiran teman terbaik kita, Finda Meliana Putri?",
       options: [
         "11 September 2003 🌸",
         "1 Januari 2000 🎆",
@@ -34,7 +34,7 @@ export const FindaQuiz: React.FC = () => {
     },
     {
       id: 2,
-      question: "Apa kado terindah yang paling membuat Finda tersenyum bahagia hari ini?",
+      question: "Apa kado terindah yang paling membuat Meli tersenyum bahagia hari ini?",
       options: [
         "Kehadiran, doa tulus, & momen hangat bersama orang tersayang 💖",
         "Kue ulang tahun rasa cabe rawit 🌶️",
@@ -42,11 +42,11 @@ export const FindaQuiz: React.FC = () => {
         "Buku catatan seratus lembar 📚"
       ],
       correctIndex: 0,
-      explanation: "Benar! Bagi Finda, kasih sayang dan perhatian tulus dari keluarga & sahabat terbaik adalah kado manis tak ternilai."
+      explanation: "Benar! Bagi Meli, kasih sayang dan perhatian tulus dari keluarga & teman terbaik adalah kado manis tak ternilai."
     },
     {
       id: 3,
-      question: "Bagaimana cara terbaik menghibur Finda saat sedang merasa lelah?",
+      question: "Bagaimana cara terbaik menghibur Meli saat sedang merasa lelah?",
       options: [
         "Disuruh lari maraton 10 km 🏃‍♀️",
         "Diajak obrol santai, dengerin cerita, & menikmati dessert favorit 🍰",
@@ -54,11 +54,11 @@ export const FindaQuiz: React.FC = () => {
         "Ditinggal sendirian di tempat sepi 🤐"
       ],
       correctIndex: 1,
-      explanation: "Tepat! Obrolan hangat, makanan enak, dan kehadiran sahabat selalu sukses mengembalikan senyum ceria Finda!"
+      explanation: "Tepat! Obrolan hangat, makanan enak, dan kehadiran teman selalu sukses mengembalikan senyum ceria Meli!"
     },
     {
       id: 4,
-      question: "Apa keahlian tersembunyi yang membuat Finda begitu disukai sahabatnya?",
+      question: "Apa keahlian tersembunyi yang membuat Meli begitu disukai temannya?",
       options: [
         "Bisa terbang ke awan ☁️",
         "Aura keceriaan dan kebaikan hati yang selalu menenangkan ✨",
@@ -66,7 +66,7 @@ export const FindaQuiz: React.FC = () => {
         "Menghilang saat dipanggil 👻"
       ],
       correctIndex: 1,
-      explanation: "Super power Finda adalah kebaikan hati dan senyuman manisnya yang tak pernah gagal membawa rasa hangat!"
+      explanation: "Super power Meli adalah kebaikan hati dan senyuman manisnya yang tak pernah gagal membawa rasa hangat!"
     },
     {
       id: 5,
@@ -78,7 +78,7 @@ export const FindaQuiz: React.FC = () => {
         "Menjadi juara dunia petak kumpet 🙈"
       ],
       correctIndex: 0,
-      explanation: "100% Benar! Semoga keberkahan, kemudahan, dan kebahagiaan sejati menyertai setiap langkah perjalanan Finda!"
+      explanation: "100% Benar! Semoga keberkahan, kemudahan, dan kebahagiaan sejati menyertai setiap langkah perjalanan Meli!"
     }
   ];
 
@@ -137,10 +137,10 @@ export const FindaQuiz: React.FC = () => {
         <div className="text-center space-y-3">
           <div className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-amber-100 text-amber-800 text-xs font-semibold">
             <HelpCircle className="w-4 h-4 text-amber-600" />
-            <span>Kuis Sahabat Terbaik</span>
+            <span>Kuis Teman Terbaik</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold font-heading text-gray-900">
-            Seberapa Kenal Kamu Dengan Finda? 🎯
+            Seberapa Kenal Kamu Dengan Meli? 🎯
           </h2>
           <p className="text-gray-600 text-sm max-w-md mx-auto">
             Uji seberapa tahu kamu tentang <span className="font-semibold text-pink-600">Finda Meliana Putri</span> dalam kuis ulang tahun interaktif ini!
@@ -241,15 +241,15 @@ export const FindaQuiz: React.FC = () => {
 
             <div className="space-y-2">
               <h3 className="text-xl md:text-2xl font-bold font-heading text-gray-900">
-                Sertifikat Sahabat Sejati Finda Meliana Putri! 🏆
+                Sertifikat Teman Sejati Finda Meliana Putri! 🏆
               </h3>
               <p className="text-gray-600 text-sm">
-                Kamu berhasil menjawab <span className="font-bold text-pink-600">{score} dari {questions.length}</span> pertanyaan tentang Finda!
+                Kamu berhasil menjawab <span className="font-bold text-pink-600">{score} dari {questions.length}</span> pertanyaan tentang Meli!
               </p>
             </div>
 
             <div className="p-5 bg-gradient-to-r from-pink-50 to-purple-50 rounded-2xl border border-pink-100 text-gray-700 text-sm leading-relaxed italic font-script text-xl">
-              "Terima kasih sudah selalu ada dan mendoakan Finda Meliana Putri. Persahabatan kalian adalah kado paling hangat yang membuat hari ulang tahun ini begitu berharga! 💖"
+              "Terima kasih sudah selalu ada dan mendoakan Finda Meliana Putri. Pertemanan kalian adalah kado paling hangat yang membuat hari ulang tahun ini begitu berharga! 💖"
             </div>
 
             <div className="flex justify-center gap-4 pt-2">

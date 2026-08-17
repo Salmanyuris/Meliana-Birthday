@@ -25,7 +25,7 @@ export const SecretLetter: React.FC = () => {
 
   const copyLetter = () => {
     sound.playPop();
-    const text = `Surat Ulang Tahun Untuk Finda Meliana Putri 🌸\n\nSelamat Ulang Tahun yang Ke-23, Finda! 🎂✨\nSemoga usiamu yang baru diliputi keberkahan, kebahagiaan tanpa batas, kesehatan yang melimpah, serta tercapainya seluruh impian indahmu. Teruslah menjadi sosok sahabat yang hangat, ceria, dan membawa senyuman di mana pun kamu berada. Kamu sangat berharga! 💕`;
+    const text = `Surat Ulang Tahun Untuk Finda Meliana Putri 🌸\n\nSelamat Ulang Tahun yang Ke-23, Meli! 🎂✨\nSemoga usiamu yang baru diliputi keberkahan, kebahagiaan tanpa batas, kesehatan yang melimpah, serta tercapainya seluruh impian indahmu. Teruslah menjadi sosok teman yang hangat, ceria, dan membawa senyuman di mana pun kamu berada. Kamu sangat berharga! 💕`;
     navigator.clipboard.writeText(text);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
@@ -39,7 +39,7 @@ export const SecretLetter: React.FC = () => {
         <div className="space-y-3">
           <div className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-rose-100 text-rose-700 text-xs font-bold">
             <Mail className="w-4 h-4 text-rose-500" />
-            <span>Pesan Tulus Sahabat Terbaik</span>
+            <span>Pesan Tulus Teman Terbaik</span>
           </div>
           <h2 className="text-3xl md:text-5xl font-bold font-heading text-gray-900">
             Surat Ulang Tahun Ke-23 Spesial 💌
@@ -87,7 +87,7 @@ export const SecretLetter: React.FC = () => {
               <div className="flex items-center justify-between border-b border-pink-200/60 pb-4">
                 <div>
                   <h3 className="font-heading font-bold text-2xl text-pink-800">
-                    Selamat Ulang Tahun Ke-23, Finda! 🌸
+                    Selamat Ulang Tahun Ke-23, Meli! 🌸
                   </h3>
                   <p className="text-xs text-gray-500 font-bold">23 Tahun Penuh Keindahan • Special Edition</p>
                 </div>
@@ -100,13 +100,13 @@ export const SecretLetter: React.FC = () => {
               <div className="font-script text-xl md:text-2xl text-gray-800 leading-relaxed space-y-4">
                 <p>Dear Finda Meliana Putri,</p>
                 <p>
-                  Selamat ulang tahun yang ke-23 untuk sosok sahabat yang luar biasa! Di momen teristimewa ini, doa-doa terbaik mengalir khusus untukmu. Semoga di usiamu yang ke-23 ini, setiap hari selalu diliputi kebahagiaan sejati, kesehatan yang prima, kedamaian hati, dan kemudahan dalam meraih setiap cita-citamu.
+                  Selamat ulang tahun yang ke-23 untuk sosok teman yang luar biasa! Di momen teristimewa ini, doa-doa terbaik mengalir khusus untukmu. Semoga di usiamu yang ke-23 ini, setiap hari selalu diliputi kebahagiaan sejati, kesehatan yang prima, kedamaian hati, dan kemudahan dalam meraih setiap cita-citamu.
                 </p>
                 <p>
-                  Terima kasih telah menjadi sahabat yang selalu ada, membawa keceriaan dengan tawa manismu, dan selalu memberikan kehangatan di mana pun kamu berada. Kehadiranmu sungguh sangat berarti!
+                  Terima kasih telah menjadi teman yang selalu ada, membawa keceriaan dengan tawa manismu, dan selalu memberikan kehangatan di mana pun kamu berada. Kehadiranmu sungguh sangat berarti!
                 </p>
                 <p>
-                  Semoga seluruh impian dan harapan indah yang kamu inginkan satu per satu terwujud menjadi kenyataan manis di tahun ini. Tetaplah menjadi Finda yang ceria, tangguh, dan bersinar dengan caramu sendiri! 💕
+                  Semoga seluruh impian dan harapan indah yang kamu inginkan satu per satu terwujud menjadi kenyataan manis di tahun ini. Tetaplah menjadi Meli yang ceria, tangguh, dan bersinar dengan caramu sendiri! 💕
                 </p>
                 <p className="text-right pt-4">
                   Dengan penuh rasa syukur & cinta, <br />

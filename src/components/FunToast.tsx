@@ -8,14 +8,14 @@ interface Toast {
 }
 
 const MESSAGES = [
-  { message: 'Finda lagi buka website-nya! 👀', emoji: '🎉', color: 'from-pink-500 to-rose-500' },
-  { message: 'Happy Birthday Finda! 23 tahun ya sayang~ 🥺', emoji: '🎂', color: 'from-purple-500 to-pink-500' },
-  { message: 'Finda cantik banget hari ini! ✨', emoji: '💖', color: 'from-rose-400 to-pink-600' },
+  { message: 'Meli lagi buka website-nya! 👀', emoji: '🎉', color: 'from-pink-500 to-rose-500' },
+  { message: 'Happy Birthday Meli! 23 tahun ya sayang~ 🥺', emoji: '🎂', color: 'from-purple-500 to-pink-500' },
+  { message: 'Meli cantik banget hari ini! ✨', emoji: '💖', color: 'from-rose-400 to-pink-600' },
   { message: 'Semoga semua impianmu tercapai! 🌟', emoji: '🌈', color: 'from-amber-400 to-orange-500' },
   { message: 'Ada hadiah spesial di bawah ya! 🎁', emoji: '🎀', color: 'from-pink-400 to-purple-500' },
-  { message: 'Finda lagi senyum-senyum sendiri nih! 😄', emoji: '😊', color: 'from-emerald-400 to-teal-500' },
+  { message: 'Meli lagi senyum-senyum sendiri nih! 😄', emoji: '😊', color: 'from-emerald-400 to-teal-500' },
   { message: 'Chapter 23 dimulai! Siap? 🚀', emoji: '⭐', color: 'from-indigo-400 to-blue-500' },
-  { message: 'Sahabat terbaik~!! 💕', emoji: '🌸', color: 'from-pink-500 to-rose-400' },
+  { message: 'Teman terbaik~!! 💕', emoji: '🌸', color: 'from-pink-500 to-rose-400' },
   { message: 'Jangan lupa tiup lilinnya! 🕯️', emoji: '🎂', color: 'from-amber-500 to-yellow-400' },
   { message: 'Cek foto-foto kenangan kita yuk! 📸', emoji: '🤩', color: 'from-violet-500 to-purple-400' },
 ];

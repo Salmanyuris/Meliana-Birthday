@@ -22,10 +22,10 @@ const LANTERN_COLORS = [
 
 export const WishLanterns: React.FC = () => {
   const [lanterns, setLanterns] = useState<Lantern[]>([
-    { id: 1, name: "Sahabat Terbaik", message: "Semoga Finda di usia ke-23 selalu diberikan kesehatan, kelancaran rezeki, dan kebahagiaan tanpa batas! 💖", left: 12, speed: 18, delay: 0 },
+    { id: 1, name: "Teman Terbaik", message: "Semoga Meli di usia ke-23 selalu diberikan kesehatan, kelancaran rezeki, dan kebahagiaan tanpa batas! 💖", left: 12, speed: 18, delay: 0 },
     { id: 2, name: "Keluarga Warmth", message: "Happy 23th Birthday Finda Meliana Putri! Tetaplah menjadi sosok yang membanggakan dan baik hati. 🌸", left: 38, speed: 22, delay: 4 },
     { id: 3, name: "Secret Admirer", message: "Semoga tahun ke-23 ini membawa banyak kejutan manis dan kesempatan impian yang terwujud! ✨", left: 63, speed: 20, delay: 7 },
-    { id: 4, name: "Bestie Forever", message: "Barakallah fii umrik Finda! Sukses terus buat semua rencana besar di usia yang baru! 🎂", left: 82, speed: 25, delay: 2 },
+    { id: 4, name: "Bestie Forever", message: "Barakallah fii umrik Meli! Sukses terus buat semua rencana besar di usia yang baru! 🎂", left: 82, speed: 25, delay: 2 },
   ]);
 
   const [inputName, setInputName] = useState('');
@@ -188,7 +188,7 @@ export const WishLanterns: React.FC = () => {
               Doa & Harapan
             </span>
             <br />
-            <span className="text-white">Untuk Finda ✨</span>
+            <span className="text-white">Untuk Meli ✨</span>
           </motion.h2>
 
           <motion.p
@@ -199,7 +199,7 @@ export const WishLanterns: React.FC = () => {
             className="text-white/45 text-sm md:text-base max-w-md text-center leading-relaxed"
             style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 400 }}
           >
-            Tulis nama & ucapan doamu. Lampionmu akan melayang tinggi menerangi malam ulang tahun ke‑23 Finda 🌙
+            Tulis nama & ucapan doamu. Lampionmu akan melayang tinggi menerangi malam ulang tahun ke‑23 Meli 🌙
           </motion.p>
         </div>
 
@@ -278,12 +278,12 @@ export const WishLanterns: React.FC = () => {
                 className="text-white/50 text-xs font-semibold uppercase tracking-wider"
                 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
               >
-                Pesan & Doa untuk Finda
+                Pesan & Doa untuk Meli
               </label>
               <textarea
                 value={inputMessage}
                 onChange={(e) => setInputMessage(e.target.value)}
-                placeholder="Tuliskan doa terbaikmu untuk Finda di usia ke-23..."
+                placeholder="Tuliskan doa terbaikmu untuk Meli di usia ke-23..."
                 maxLength={200}
                 rows={3}
                 className="w-full px-4 py-3 rounded-2xl text-white text-sm placeholder-white/25 outline-none transition-all duration-300 resize-none"
@@ -344,7 +344,7 @@ export const WishLanterns: React.FC = () => {
             className="text-white/30 text-xs text-center"
             style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
           >
-            Klik lampion yang melayang untuk membaca pesan ucapan sahabat!
+            Klik lampion yang melayang untuk membaca pesan ucapan teman!
           </p>
           <Heart className="w-3.5 h-3.5 text-pink-400 fill-pink-400 flex-shrink-0" />
         </motion.div>

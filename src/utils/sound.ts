@@ -153,7 +153,7 @@ class SoundEffects {
     // Full Happy Birthday Melody Frequencies & Timings (Music Box Chime Tone)
     // Line 1: Happy Birthday to You (C4 C4 D4 C4 F4 E4)
     // Line 2: Happy Birthday to You (C4 C4 D4 C4 G4 F4)
-    // Line 3: Happy Birthday Dear Finda (C4 C4 C5 A4 F4 E4 D4)
+    // Line 3: Happy Birthday Dear Meli (C4 C4 C5 A4 F4 E4 D4)
     // Line 4: Happy Birthday to You (A#4 A#4 A4 F4 G4 F4)
     const birthdaySong = [
       { f: 261.63, duration: 0.3, rest: 0.38 }, // C4

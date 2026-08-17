@@ -68,7 +68,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, setActiveSection 
           title="Finda Meliana Putri - Turning 23"
         >
           <Heart className="w-4 h-4 fill-white animate-pulse" />
-          <span className="hidden sm:inline font-heading tracking-wide">Finda 23th 🌸</span>
+          <span className="hidden sm:inline font-heading tracking-wide">Meli 23th 🌸</span>
         </div>
 
         <div className="w-px h-6 bg-pink-200/80 mx-0.5 shrink-0" />
