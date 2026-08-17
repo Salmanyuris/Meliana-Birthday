@@ -14,9 +14,32 @@ import { Footer } from './components/Footer';
 import { BalloonPop } from './components/BalloonPop';
 import { FunToast } from './components/FunToast';
 import { WelcomeConfetti } from './components/WelcomeConfetti';
+import { sound } from './utils/sound';
 
 export function App() {
   const [activeSection, setActiveSection] = useState('hero');
+
+  // Auto-play music on first interaction
+  useEffect(() => {
+    const handleFirstInteraction = () => {
+      if (!sound.isBgmPlaying && !sound.isMuted) {
+        sound.startBgm();
+      }
+      document.removeEventListener('click', handleFirstInteraction);
+      document.removeEventListener('touchstart', handleFirstInteraction);
+      document.removeEventListener('keydown', handleFirstInteraction);
+    };
+
+    document.addEventListener('click', handleFirstInteraction);
+    document.addEventListener('touchstart', handleFirstInteraction);
+    document.addEventListener('keydown', handleFirstInteraction);
+
+    return () => {
+      document.removeEventListener('click', handleFirstInteraction);
+      document.removeEventListener('touchstart', handleFirstInteraction);
+      document.removeEventListener('keydown', handleFirstInteraction);
+    };
+  }, []);
 
   // Track active section on scroll
   useEffect(() => {

@@ -142,11 +142,13 @@ class SoundEffects {
     } else {
       this.startBgm();
     }
+    window.dispatchEvent(new Event('bgmStateChange'));
   }
 
   startBgm() {
     if (this.isBgmPlaying || !this.ctx) return;
     this.isBgmPlaying = true;
+    window.dispatchEvent(new Event('bgmStateChange'));
 
     // Full Happy Birthday Melody Frequencies & Timings (Music Box Chime Tone)
     // Line 1: Happy Birthday to You (C4 C4 D4 C4 F4 E4)
@@ -198,7 +200,7 @@ class SoundEffects {
       osc.type = 'triangle'; // Sweet chime tone
       osc.frequency.setValueAtTime(currentNote.f, this.ctx.currentTime);
 
-      gain.gain.setValueAtTime(0.12, this.ctx.currentTime);
+      gain.gain.setValueAtTime(0.3, this.ctx.currentTime);
       gain.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + currentNote.duration);
 
       osc.connect(gain);
@@ -214,7 +216,7 @@ class SoundEffects {
       oscHarmony.type = 'sine';
       oscHarmony.frequency.setValueAtTime(currentNote.f * 2, this.ctx.currentTime);
 
-      gainHarmony.gain.setValueAtTime(0.04, this.ctx.currentTime);
+      gainHarmony.gain.setValueAtTime(0.1, this.ctx.currentTime);
       gainHarmony.gain.exponentialRampToValueAtTime(0.0005, this.ctx.currentTime + currentNote.duration * 0.8);
 
       oscHarmony.connect(gainHarmony);
@@ -236,6 +238,7 @@ class SoundEffects {
       clearTimeout(this.bgmTimer);
       this.bgmTimer = null;
     }
+    window.dispatchEvent(new Event('bgmStateChange'));
   }
 }
 

@@ -12,6 +12,14 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, setActiveSection 
   const [isMuted, setIsMuted] = useState(sound.isMuted);
   const [isPlayingBgm, setIsPlayingBgm] = useState(sound.isBgmPlaying);
 
+  useEffect(() => {
+    const handleBgmStateChange = () => {
+      setIsPlayingBgm(sound.isBgmPlaying);
+    };
+    window.addEventListener('bgmStateChange', handleBgmStateChange);
+    return () => window.removeEventListener('bgmStateChange', handleBgmStateChange);
+  }, []);
+
   const toggleMute = () => {
     sound.isMuted = !isMuted;
     setIsMuted(!isMuted);
@@ -20,7 +28,6 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, setActiveSection 
 
   const toggleBgm = () => {
     sound.toggleBgm();
-    setIsPlayingBgm(sound.isBgmPlaying);
   };
 
   const triggerCelebration = () => {
