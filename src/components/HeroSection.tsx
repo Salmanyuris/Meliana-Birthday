@@ -31,21 +31,21 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center pt-16 pb-20 px-4 overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center pt-24 pb-32 lg:pt-32 lg:pb-40 px-4 overflow-hidden">
       
       {/* Background Glow Blobs */}
-      <div className="absolute top-1/4 left-10 w-80 h-80 bg-pink-300/30 rounded-full filter blur-3xl animate-pulse" />
-      <div className="absolute bottom-1/4 right-10 w-96 h-96 bg-purple-300/30 rounded-full filter blur-3xl animate-pulse delay-1000" />
-      <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-amber-200/30 rounded-full filter blur-3xl animate-pulse delay-500" />
+      <div className="absolute top-1/4 left-10 w-80 h-80 bg-pink-300/30 rounded-full filter blur-3xl animate-pulse pointer-events-none" />
+      <div className="absolute bottom-1/4 right-10 w-96 h-96 bg-purple-300/30 rounded-full filter blur-3xl animate-pulse delay-1000 pointer-events-none" />
+      <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-amber-200/30 rounded-full filter blur-3xl animate-pulse delay-500 pointer-events-none" />
 
-      <div className="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-10 items-center z-10">
+      <div className="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center z-10 flex-grow">
         
         {/* Left Column: Greeting Text & Chapter 23 Concept Badges */}
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="lg:col-span-7 text-center lg:text-left space-y-6"
+          className="lg:col-span-7 text-center lg:text-left space-y-6 lg:pr-4"
         >
           {/* Chapter 23 & Concept Badges */}
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2.5">
@@ -64,7 +64,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
           </div>
 
           {/* Main Title */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-heading leading-tight text-gray-900">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold font-heading leading-tight text-gray-900">
             Selamat Ulang Tahun, <br />
             <span className="rainbow-text">Finda Meliana Putri!</span>
           </h1>
@@ -103,7 +103,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
           </div>
 
           {/* Floating Badges */}
-          <div className="pt-4 flex items-center justify-center lg:justify-start gap-4 text-xs text-gray-500 font-medium">
+          <div className="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs text-gray-500 font-medium hidden sm:flex">
             <div className="flex items-center gap-1.5 bg-white/80 backdrop-blur-md px-3.5 py-2 rounded-full border border-pink-100 shadow-xs hover-heartbeat">
               <Heart className="w-4 h-4 text-rose-500 fill-rose-500 animate-heartbeat" />
               <span>Dibuat Khusus Untuk Meli</span>
@@ -121,15 +121,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, delay: 0.2 }}
-          className="lg:col-span-5 flex justify-center relative"
+          className="lg:col-span-5 flex justify-center lg:justify-end relative mt-8 lg:mt-0"
         >
-          <div className="relative group w-full max-w-sm md:max-w-md">
+          <div className="relative group w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[360px]">
             
             {/* Glowing ring behind image */}
             <div className="absolute -inset-2 bg-gradient-to-r from-pink-400 via-purple-400 to-amber-300 rounded-3xl blur-xl opacity-60 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse-glow" />
 
             {/* Polaroid Card Frame */}
-            <div className="relative bg-white rounded-3xl p-4 pb-6 border border-white/90 shadow-2xl overflow-hidden transform rotate-1 group-hover:rotate-0 transition-transform duration-500">
+            <div className="relative bg-white rounded-3xl p-4 pb-6 border border-white/90 shadow-2xl overflow-hidden transform rotate-2 group-hover:rotate-0 transition-transform duration-500">
               
               {/* Paper Washi Tape Accent */}
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-24 h-6 bg-pink-200/90 border border-white shadow-xs rotate-[-2deg] z-20 rounded-sm" />
@@ -158,10 +158,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
       {/* Scroll Down Indicator */}
       <div 
         onClick={() => onNavigate('photos')}
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 cursor-pointer flex flex-col items-center gap-1 text-pink-400 hover:text-pink-600 transition-colors animate-bounce z-20"
+        className="absolute bottom-10 lg:bottom-12 left-1/2 -translate-x-1/2 cursor-pointer flex flex-col items-center gap-1 text-pink-400 hover:text-pink-600 transition-colors animate-bounce z-20"
       >
-        <span className="text-xs font-semibold tracking-wider uppercase">Jelajahi Foto & Momen</span>
-        <ChevronDown className="w-5 h-5" />
+        <span className="text-xs font-semibold tracking-wider uppercase hidden sm:block">Jelajahi Foto & Momen</span>
+        <ChevronDown className="w-6 h-6 sm:w-5 sm:h-5" />
       </div>
 
     </section>

@@ -72,7 +72,7 @@ export const FunToast: React.FC = () => {
   }, [addToast]);
 
   return (
-    <div className="fixed bottom-28 right-4 z-[200] flex flex-col gap-3 items-end pointer-events-none">
+    <div className="fixed top-4 sm:top-auto sm:bottom-28 right-4 sm:right-6 z-[200] flex flex-col gap-3 items-end pointer-events-none">
       {toasts.map((toast) => (
         <div
           key={toast.id}
@@ -82,7 +82,7 @@ export const FunToast: React.FC = () => {
           }}
         >
           <div
-            className={`flex items-center gap-3 px-4 py-3 rounded-2xl bg-gradient-to-r ${toast.color} text-white shadow-2xl max-w-[280px] cursor-pointer hover:scale-105 transition-transform`}
+            className={`flex items-center gap-3 px-4 py-3 rounded-2xl bg-gradient-to-r ${toast.color} text-white shadow-2xl max-w-[260px] sm:max-w-[280px] cursor-pointer hover:scale-105 transition-transform`}
             onClick={() => setToasts(prev => prev.filter(t => t.id !== toast.id))}
           >
             <span className="text-2xl flex-shrink-0">{toast.emoji}</span>

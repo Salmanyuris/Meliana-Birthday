@@ -74,7 +74,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, setActiveSection 
         <div className="w-px h-6 bg-pink-200/80 mx-0.5 shrink-0" />
 
         {/* Nav Items Dock */}
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-1 shrink-0">
           {navItems.map((item) => {
             const isActive = activeSection === item.id;
             return (
