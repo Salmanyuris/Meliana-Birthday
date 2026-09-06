@@ -125,4 +125,24 @@ Dengan konfigurasi tersebut, template React + Vite dapat dikembangkan secara ber
 }
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Referensi Aturan Oxlint
+
+Oxlint menyediakan berbagai aturan (lint rules) yang dapat digunakan untuk memeriksa kualitas, konsistensi, dan potensi masalah pada source code.
+
+Setiap aturan memiliki tujuan dan tingkat pemeriksaan yang berbeda. Anda dapat memilih aturan yang sesuai dengan kebutuhan project, mulai dari aturan dasar untuk menemukan kesalahan umum hingga aturan yang lebih ketat untuk aplikasi production.
+
+Untuk melihat daftar lengkap aturan yang tersedia, termasuk kategori, deskripsi, konfigurasi, dan cara penggunaannya, lihat dokumentasi resmi Oxlint:
+
+{"fallbackMarkdown":"Oxlint Rules Documentation
+","reference":{"matched_text":"","prefix":null,"start_idx":741,"end_idx":818,"safe_urls":[],"refs":[],"alt":"Oxlint Rules Documentation
+","prompt_text":"Oxlint Rules Documentation
+","type":"url","item":{"title":"Oxlint Rules Documentation","url":"https://oxc.rs/docs/guide/usage/linter/rules?utm_source=chatgpt.com","attribution":"oxc.rs","pub_date":null,"snippet":null,"attribution_segments":null,"supporting_websites":null,"refs":[],"hue":null,"attributions":null},"logo":null,"layout":null,"title":"Oxlint Rules Documentation"},"showLoginRequiredCard":false}
+
+Dokumentasi tersebut dapat digunakan sebagai referensi ketika ingin:
+
+Mengetahui aturan linting yang tersedia.
+Memahami fungsi dan tujuan masing-masing aturan.
+Melihat aturan berdasarkan kategori tertentu.
+Menentukan aturan mana yang perlu diaktifkan atau dinonaktifkan.
+Menyesuaikan konfigurasi Oxlint dengan standar coding dalam project.
+Menerapkan konfigurasi linting yang lebih ketat untuk aplikasi production.
