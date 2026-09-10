@@ -19,26 +19,9 @@ import { sound } from './utils/sound';
 export function App() {
   const [activeSection, setActiveSection] = useState('hero');
 
-  // Auto-play music on first interaction
+  // Auto-play music automatically on load and user gesture fallback
   useEffect(() => {
-    const handleFirstInteraction = () => {
-      if (!sound.isBgmPlaying && !sound.isMuted) {
-        sound.startBgm();
-      }
-      document.removeEventListener('click', handleFirstInteraction);
-      document.removeEventListener('touchstart', handleFirstInteraction);
-      document.removeEventListener('keydown', handleFirstInteraction);
-    };
-
-    document.addEventListener('click', handleFirstInteraction);
-    document.addEventListener('touchstart', handleFirstInteraction);
-    document.addEventListener('keydown', handleFirstInteraction);
-
-    return () => {
-      document.removeEventListener('click', handleFirstInteraction);
-      document.removeEventListener('touchstart', handleFirstInteraction);
-      document.removeEventListener('keydown', handleFirstInteraction);
-    };
+    sound.setupAutoPlayOnUserGesture();
   }, []);
 
   // Track active section on scroll
