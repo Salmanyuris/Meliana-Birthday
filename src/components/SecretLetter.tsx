@@ -34,7 +34,7 @@ export const SecretLetter: React.FC = () => {
   return (
     <section id="letter" className="py-20 px-4 relative">
       <div className="max-w-3xl mx-auto space-y-8 text-center">
-        
+
         {/* Header */}
         <div className="space-y-3">
           <div className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-rose-100 text-rose-700 text-xs font-bold">
@@ -109,7 +109,7 @@ export const SecretLetter: React.FC = () => {
                   Semoga seluruh impian dan harapan indah yang kamu inginkan satu per satu terwujud menjadi kenyataan manis di tahun ini. Tetaplah menjadi Meli yang ceria, tangguh, dan bersinar dengan caramu sendiri! 💕
                 </p>
                 <p className="text-right pt-4">
-                  Dengan penuh rasa syukur & cinta, <br />
+                  Dengan penuh rasa syukur & Rasa ..., <br />
                   <span className="text-pink-600 font-bold">Salman Yuris 💖✨</span>
                 </p>
               </div>

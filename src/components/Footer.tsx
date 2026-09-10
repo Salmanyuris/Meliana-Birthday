@@ -6,8 +6,8 @@ export const Footer: React.FC = () => {
   return (
     <footer className="py-12 px-4 border-t border-pink-100 bg-white/70 backdrop-blur-md relative z-10">
       <div className="max-w-5xl mx-auto flex flex-col items-center justify-center text-center space-y-4">
-        
-        <div 
+
+        <div
           onClick={() => {
             sound.playSparkle();
             window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -23,7 +23,7 @@ export const Footer: React.FC = () => {
         </div>
 
         <p className="text-xs text-gray-500 max-w-md font-light">
-          11 September 2003 • Website Hadiah Spesial Ulang Tahun Dibuat Khusus Dari Teman Terbaik. Semoga Hari-Harimu Selalu Dipenuhi Keceriaan! 💖✨
+          11 September 2003 • Website Hadiah Spesial Ulang Tahun Dibuat Khusus Dari Salman Yuris. Semoga Hari-Harimu Selalu Dipenuhi Keceriaan, Aamiin! 💖✨
         </p>
 
         <div className="flex items-center gap-1.5 text-xs text-pink-600 font-semibold bg-pink-50 px-4 py-1.5 rounded-full border border-pink-100">
