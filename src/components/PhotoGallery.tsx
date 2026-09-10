@@ -22,7 +22,11 @@ interface PhotoItem {
   caption: string;
   locationTag: string;
   rotation: string;
+  mobileRotation: string;
+  mobileOffset: string;
+  tapePosition: string;
   tapeColor: string;
+  sticker?: string;
   defaultLikes: number;
 }
 
@@ -37,7 +41,11 @@ export const PhotoGallery: React.FC = () => {
       caption: "Potret ceria Meli yang selalu bikin suasana hangat & penuh tawa!",
       locationTag: "Momen Spesial 💖",
       rotation: "-rotate-2 hover:rotate-0",
-      tapeColor: "bg-pink-300/80",
+      mobileRotation: "-rotate-4 sm:-rotate-2",
+      mobileOffset: "max-w-[86%] self-start ml-1 sm:max-w-none sm:ml-0 sm:self-auto",
+      tapePosition: "-top-3 left-4 rotate-[-12deg]",
+      tapeColor: "bg-pink-300/90",
+      sticker: "✨ Sweet 23",
       defaultLikes: 58
     },
     {
@@ -49,7 +57,11 @@ export const PhotoGallery: React.FC = () => {
       caption: "Sudut terindah dan vibe paling aesthetic khas Finda Meliana Putri.",
       locationTag: "Vibe Favorit ✨",
       rotation: "rotate-3 hover:rotate-0",
-      tapeColor: "bg-purple-300/80",
+      mobileRotation: "rotate-5 sm:rotate-3",
+      mobileOffset: "max-w-[86%] self-end mr-1 -mt-6 sm:mt-0 sm:max-w-none sm:mr-0 sm:self-auto",
+      tapePosition: "-top-3 right-6 rotate-[14deg]",
+      tapeColor: "bg-purple-300/90",
+      sticker: "🎀 Vibe Meli",
       defaultLikes: 64
     },
     {
@@ -61,7 +73,11 @@ export const PhotoGallery: React.FC = () => {
       caption: "Sinar kebaikan dan keceriaan yang selalu menyinari hari-hari temannya.",
       locationTag: "Warm Heart 💛",
       rotation: "-rotate-1 hover:rotate-0",
-      tapeColor: "bg-amber-300/80",
+      mobileRotation: "-rotate-5 sm:-rotate-1",
+      mobileOffset: "max-w-[88%] self-center -mt-5 sm:mt-0 sm:max-w-none sm:self-auto",
+      tapePosition: "-top-3 left-1/2 -translate-x-1/2 rotate-[-3deg]",
+      tapeColor: "bg-amber-300/90",
+      sticker: "☀️ Warm Heart",
       defaultLikes: 72
     },
     {
@@ -73,7 +89,11 @@ export const PhotoGallery: React.FC = () => {
       caption: "Gaya khas yang selalu anggun, ramah, dan bikin kangen!",
       locationTag: "Sweet Memory 🌷",
       rotation: "rotate-2 hover:rotate-0",
-      tapeColor: "bg-rose-300/80",
+      mobileRotation: "rotate-6 sm:rotate-2",
+      mobileOffset: "max-w-[86%] self-end mr-2 -mt-6 sm:mt-0 sm:max-w-none sm:mr-0 sm:self-auto",
+      tapePosition: "-top-3 right-5 rotate-[12deg]",
+      tapeColor: "bg-rose-300/90",
+      sticker: "🌷 Graceful",
       defaultLikes: 81
     },
     {
@@ -85,7 +105,11 @@ export const PhotoGallery: React.FC = () => {
       caption: "Momen tertawa paling lepas bersama teman tercinta.",
       locationTag: "Joyful Day 🥳",
       rotation: "-rotate-3 hover:rotate-0",
-      tapeColor: "bg-pink-300/80",
+      mobileRotation: "-rotate-6 sm:-rotate-3",
+      mobileOffset: "max-w-[86%] self-start ml-2 -mt-5 sm:mt-0 sm:max-w-none sm:ml-0 sm:self-auto",
+      tapePosition: "-top-3 left-6 rotate-[-15deg]",
+      tapeColor: "bg-pink-300/90",
+      sticker: "🥳 Joyful Meli",
       defaultLikes: 69
     },
     {
@@ -97,7 +121,11 @@ export const PhotoGallery: React.FC = () => {
       caption: "Finda Meliana Putri - sosok teman yang selalu supportif & baik hati.",
       locationTag: "Pure Happiness 💫",
       rotation: "rotate-1 hover:rotate-0",
-      tapeColor: "bg-amber-300/80",
+      mobileRotation: "rotate-4 sm:rotate-1",
+      mobileOffset: "max-w-[88%] self-center -mt-6 sm:mt-0 sm:max-w-none sm:self-auto",
+      tapePosition: "-top-3 right-8 rotate-[8deg]",
+      tapeColor: "bg-amber-300/90",
+      sticker: "⭐ Bestie Forever",
       defaultLikes: 94
     },
     {
@@ -109,7 +137,11 @@ export const PhotoGallery: React.FC = () => {
       caption: "Ekspresi paling cute yang tak pernah gagal membawa senyuman.",
       locationTag: "Lovely Smile 🌸",
       rotation: "-rotate-2 hover:rotate-0",
-      tapeColor: "bg-purple-300/80",
+      mobileRotation: "-rotate-5 sm:-rotate-2",
+      mobileOffset: "max-w-[86%] self-start ml-1 -mt-5 sm:mt-0 sm:max-w-none sm:ml-0 sm:self-auto",
+      tapePosition: "-top-3 left-5 rotate-[-10deg]",
+      tapeColor: "bg-purple-300/90",
+      sticker: "🧁 So Cute",
       defaultLikes: 77
     },
     {
@@ -121,7 +153,11 @@ export const PhotoGallery: React.FC = () => {
       caption: "Semoga usiamu yang ke-23 ini menjadi awal babak hidup yang paling indah!",
       locationTag: "Meli's Day 🎂",
       rotation: "rotate-2 hover:rotate-0",
-      tapeColor: "bg-rose-300/80",
+      mobileRotation: "rotate-6 sm:rotate-2",
+      mobileOffset: "max-w-[86%] self-end mr-2 -mt-6 sm:mt-0 sm:max-w-none sm:mr-0 sm:self-auto",
+      tapePosition: "-top-3 left-1/2 -translate-x-1/2 rotate-[15deg]",
+      tapeColor: "bg-rose-300/90",
+      sticker: "🎂 Age 23 Queen",
       defaultLikes: 108
     }
   ];
@@ -175,6 +211,9 @@ export const PhotoGallery: React.FC = () => {
           <p className="text-gray-600 max-w-lg mx-auto text-sm md:text-base font-light">
             Kumpulan foto-foto terestetik dan paling manis merayakan keindahan <span className="font-semibold text-pink-600">Ulang Tahun Ke-23 Meli</span>!
           </p>
+          <div className="inline-block sm:hidden bg-pink-100/70 text-pink-700 text-[11px] font-medium px-3 py-1 rounded-full border border-pink-200/80 shadow-2xs">
+            📌 Layout Abstrak & Estetik Scrapbook • Tap foto untuk zoom 💖
+          </div>
         </div>
 
         {/* Category Filter Pills */}
@@ -197,8 +236,8 @@ export const PhotoGallery: React.FC = () => {
           ))}
         </div>
 
-        {/* Polaroid Scrapbook Photo Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 pt-4">
+        {/* Polaroid Scrapbook Photo Grid / Abstract Mobile Layout */}
+        <div className="flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 pt-4 relative">
           {filteredPhotos.map((photo) => (
             <motion.div
               key={photo.id}
@@ -207,11 +246,19 @@ export const PhotoGallery: React.FC = () => {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 0.4 }}
               whileHover={{ scale: 1.05, rotate: 0, zIndex: 20 }}
+              whileTap={{ scale: 1.02 }}
               onClick={() => openLightbox(photo)}
-              className={`relative cursor-pointer bg-white rounded-2xl p-3.5 pb-5 shadow-xl border border-pink-100/90 transition-all duration-300 ${photo.rotation} group hover:shadow-2xl`}
+              className={`relative cursor-pointer bg-white rounded-2xl p-3.5 pb-5 shadow-xl border border-pink-100/90 transition-all duration-300 ${photo.mobileRotation} ${photo.mobileOffset} group hover:shadow-2xl hover:rotate-0`}
             >
               {/* Paper Washi Tape Accent */}
-              <div className={`absolute -top-3 left-1/2 -translate-x-1/2 w-20 h-5.5 ${photo.tapeColor} border border-white/70 shadow-xs rotate-[-2deg] z-10 backdrop-blur-xs rounded-sm opacity-90 group-hover:bg-pink-400 transition-colors`} />
+              <div className={`absolute ${photo.tapePosition} w-20 h-5.5 ${photo.tapeColor} border border-white/70 shadow-xs z-10 backdrop-blur-xs rounded-sm opacity-95 group-hover:bg-pink-400 transition-colors`} />
+
+              {/* Aesthetic Mobile Corner Scrapbook Sticker */}
+              {photo.sticker && (
+                <div className="absolute -bottom-2 -right-2 z-10 bg-gradient-to-r from-amber-200 via-pink-200 to-rose-200 text-pink-900 text-[10px] font-bold px-2.5 py-1 rounded-full shadow-md border border-white/80 rotate-[-4deg] group-hover:rotate-0 transition-transform">
+                  {photo.sticker}
+                </div>
+              )}
 
               {/* Photo Frame Container */}
               <div className="relative aspect-[4/5] rounded-xl overflow-hidden bg-gray-100 mb-3 border border-gray-100 shadow-inner">
